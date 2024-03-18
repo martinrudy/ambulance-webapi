@@ -22,7 +22,6 @@ switch ($command) {
         try {
             mongo up --detach
             go run ${ProjectRoot}/cmd/ambulance-api-service
-            mongo down
         }finally {
             mongo down
         }
